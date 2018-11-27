@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cadastrar Delivery - Snacker Pazza</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  
+
+  </head>
+  <body>
+
+<div class="container" >
+  <h2><br />Cadastrar Delivery</h2>
+  <form action="/action_page.php">
+  	<div class="col-md-6" class="form-group">
+      <label for="name">Nome do cliente:</label>
+      <input type="name" class="form-control" id="name" placeholder="Digite o nome" name="name">
+    </div>
+    <div class="col-md-6" class="form-group">
+      <label for="email">Endereço:</label>
+      <input type="email" class="form-control" id="email" placeholder="Digite o Endereço de entrega" name="email">
+    </div>
+    <div class="col-md-6" class="form-group">
+      <label for="pwd">Forma de pagamento:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Digite a forma de pagamento" name="pwd">
+    </div>
+
+  <h2><br />Lista de pedidos</h2>
+    <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Pedido</th>
+      <th scope="col">Horário</th>
+      <th scope="col">Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Portuguesa Broto</td>
+      <td>19:26</td>
+      <td>R$: 15,00</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Calabresa Grande</td>
+      <td>20:30</td>
+      <td>R$: 25,00</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mussarela Grande</td>
+      <td>21:00</td>
+      <td>R$: 20,00</td>
+    </tr>
+  </tbody>
+</table>
+    
+<h2><br />Total = R$: 60,00</h2>
+   
+    <div class="container">
+    <form action="/action_page.php">
+    <div class="col-md-3" class="form-group">
+      <label for="sel1">Selecione o status do pedido:</label>
+      <select class="form-control" id="sel1" name="sellist1">
+        <option>Pedido efetuado</option>
+        <option>Em produção</option>
+        <option>Saiu para entrega</option>
+        </form>
+	</div>
+
+
+    <div class="col-md-6" class="checkbox">
+      <label><input type="checkbox" name="remember">  Confirmação de informações</label>
+      <br /><br />
+    </div>
+    <button type="submit" class="btn btn-default">Solicitar cadastro de delivery</button>
+  </form>
+</div>
+</div>
+  </body>
+</html>
